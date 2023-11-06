@@ -1,6 +1,6 @@
 function plotWord(inputString)
 
-% making the container map
+% making the container map for each letter 
 letters = {'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 's', 'u', 'v', 'w', 'y', 'z'};
 ax = [0.4 1 1.7 1.3 1 1.2 1.5 1.7 1.6 1.85];
 ay = [0.4 0.95 1.85 1.8 0.95 0.6 1 1.85 1 0.7];
@@ -49,8 +49,8 @@ x_temp = [0];
 for i = 1:length(inputString)
     letter = inputString(i);
     if isKey(x_letters, letter)
-        % making x_temp to add the max x coordinates of the letters before
-        % it
+        % adding the max x coordinates of the letters before the current
+        % letter
         x = [x x_letters(letter)+max(x_temp)];
         x_temp = [x x_letters(letter)];
         y = [y y_letters(letter)];
@@ -74,7 +74,7 @@ ylabel('y')
 set(gca, 'FontSize', 10, 'LineWidth', 1)
 grid on
 
-% adding the dot for i if it is in the input
+% adding the dot for i if it is in the input string
 x = [];
 x_temp = [0];
 for i = 1:length(inputString)
