@@ -63,7 +63,6 @@ figure(3)
 plot(xx, yy, 'k', 'LineWidth', 1.5)
 hold on
 plot(x, y, 'bo', 'MarkerFaceColor', 'b')
-axis([-0.2 6 -0.2 4.5])
 grid on
 title('Spline Interpolation of Cursive name IZZA')
 xlabel('x')
