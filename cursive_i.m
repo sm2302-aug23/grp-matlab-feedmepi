@@ -18,3 +18,6 @@ xlabel('x')
 ylabel('y')
 set(gca, 'FontSize', 10, 'LineWidth', 1)
 grid on
+pos = [1.6 2.1 0.125 0.125];
+rectangle('Position',pos, 'Curvature',[1 1])
+axis equal
