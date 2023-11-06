@@ -1,7 +1,7 @@
 function plotWord(inputString)
 
 % making the container map for each letter 
-letters = {'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 's', 'u', 'v', 'w', 'y', 'z'};
+letters = {'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'};
 ax = [0.4 1 1.7 1.3 1 1.2 1.5 1.7 1.6 1.85];
 ay = [0.4 0.95 1.85 1.8 0.95 0.6 1 1.85 1 0.7];
 bx = [0.6 1 1.4 1.35 1.1 1 1.35 1.65 1.5 1.25 1.75];
@@ -37,8 +37,8 @@ yy = [2 2.6 2 1.4 2 2.6 1 0.1 1 2.4];
 zx = [0.8 1.5 1.9 1.6 1 1.3 1.6 1.8 1.6 1.1 1 1.8 2.6];
 zy = [2 2.6 2.2 1.6 1.4 1.7 1.6 1.2 0.4 0 0.4 1.2 2];
 
-x_coords = {ax, bx, cx, dx, ex, fx, gx, hx, ix, sx, ux, vx, wx, yx, zx};
-y_coords = {ay, by, cy, dy, ey, fy, gy, hy, iy, sy, uy, vy, wy, yy, zy};
+x_coords = {ax, bx, cx, dx, ex, fx, gx, hx, ix, sx, tx, ux, vx, wx, xx, yx, zx};
+y_coords = {ay, by, cy, dy, ey, fy, gy, hy, iy, sy, ty, uy, vy, wy, xy, yy, zy};
 
 x_letters = containers.Map(letters, x_coords);
 y_letters = containers.Map(letters, y_coords);
